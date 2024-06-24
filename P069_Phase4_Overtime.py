@@ -17,7 +17,7 @@ import re #regex
 
 
 #Create phase 4 DF 
-phase4_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 4\\excel\\Phase4.xlsx')
+phase4_df = pd.read_excel('Phase4.xlsx')
 
 
 # In[18]:
@@ -476,29 +476,6 @@ plt.legend()
 plt.show()
 
 
-# ### Conclusion
-# 
-# In this phase, we saw a marked decrease in overtime hours compared to Phase 3, signifying a more balanced and effective allocation of workload among team members. This reduction in overtime suggests that tasks were completed more efficiently within regular working hours.
-# 
-# Moreover, there was a notable reduction in the overlap between tasks, which led to a more organized and streamlined workflow. This minimized the delays and bottlenecks that often arise from task overlaps, allowing team members to focus more clearly on their individual responsibilities.
-# 
-# Despite these enhancements in efficiency and task management, the overall length of this phase was comparable to that of Phase 3. This indicates that our team maintained the same project timeline while optimizing the use of available time. The improvements in reducing overtime and task overlap reflect a strategic shift towards better process management and resource utilization.
-# 
-# These findings underscore a significant advancement in our operational efficiency, suggesting that the team’s improved time and task management can serve as a model for future phases. Moving forward, continuing to refine these practices will be key to sustaining and enhancing our productivity and project outcomes.
-
-# In[42]:
-
-
-# with pd.ExcelWriter("P060 Phase4 Lenght_Overtime.xlsx", engine = "openpyxl") as writer:
-#     hour_week_df.to_excel(writer,sheet_name='Hours per week and task')
-#     weekly_df.to_excel(writer,sheet_name='Total hours and overtime')
-#     task_aggregate.to_excel(writer,sheet_name='Total hours and overtime per task')
-#     weekly_emp.to_excel(writer,sheet_name='Total hours and overtime per employee')
-#     weekly_aggregate.to_excel(writer,sheet_name='Total hours and overtime per week')
-
-
-
-# In[ ]:
 
 
 
