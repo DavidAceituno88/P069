@@ -45,7 +45,7 @@ if selected_section == ":dollar: Expenses and Purchase":
         'Travel - Kilometers': '14,670.67',
         'Per Diem': '51,430.00',
         'Accommodations': '18,386.75',
-        'Purchases (Including sub-contracts)': '26,1138.57'
+        'Purchases (Including sub-contracts)': '261,138.57'
         }
 
        # Display metrics data in two rows
