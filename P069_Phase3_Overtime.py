@@ -447,63 +447,7 @@ plt.show()
 # In[32]:
 
 
-from bokeh.plotting import figure, show, output_notebook
-from bokeh.models import ColumnDataSource, DatetimeTickFormatter,DatetimeTicker
 
-
-# Convert date strings to datetime objects
-
-phase3_df['Start Date'] = pd.to_datetime(phase3_df['Start Date'])
-phase3_df['End Date'] = pd.to_datetime(phase3_df['End Date'])
-
-# Create a DataFrame
-#phase3_df = phase3_df.DataFrame(phase3_df)
-
-# Define the order of phases
-phase_order = ['Foundation','Groundwork', 'Framing', 'Cladding/Siding', 'Roofing']
-
-# Sort DataFrame by phase
-phase3_df['Phase'] = pd.Categorical(phase3_df['Phase'], categories=phase_order, ordered=True)
-phase3_df = phase3_df.sort_values(by='Phase')
-
-# Create a ColumnDataSource
-source = ColumnDataSource(phase3_df)
-
-# Create the figure
-p = figure(y_range=phase_order[::-1], x_axis_type='datetime', title='Phase 3 Work Schedule', width=800, height=400)
-
-# Plot the Gantt bars
-p.hbar(y='Phase', left='Start Date', right='End Date', height=0.5, color='skyblue', source=source)
-
-# Customize the figure
-p.xaxis.axis_label = 'Date'
-p.yaxis.axis_label = 'Phase'
-
-p.xaxis.formatter = DatetimeTickFormatter(
-    months="%b %Y",
-    days="%b %d, %Y",
-    hours="%b %d, %Y %H:%M",
-    minutes="%b %d, %Y %H:%M"
-)
-
-# Create a DatetimeTicker and set its desired number of ticks
-p.xaxis.ticker.desired_num_ticks = 12
-
-# Add a new x-axis at the top of the plot
-p.extra_x_ranges = {"top_x": p.x_range}
-p.add_layout(p.xaxis[0].clone(), 'above')
-
-# Configure the top x-axis formatter and ticker
-# p.xaxis[1].formatter = DatetimeTickFormatter(months="%b %Y")
-# p.xaxis[1].ticker = DatetimeTicker
-
-
-# # Show the chart
-# output_notebook()
-# show(p)
-
-
-# In[ ]:
 
 
 
