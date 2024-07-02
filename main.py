@@ -1,7 +1,6 @@
 # main.py
 import streamlit as st
-import phase3
-import phase4  # Import your separate app files
+import phase3, phase4 # Import your separate app files
 
 # Dictionary to hold pages
 PAGES = {
