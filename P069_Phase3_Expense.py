@@ -18,7 +18,7 @@ import plotly.express as px
 df = pd.read_excel('Expenses.xlsx')
 
 df = df.rename(columns={'Unnamed: 0': 'Type'})
-purchase_df = pd.read_excel('purchasetbl.xlsx')
+purchase_df = pd.read_excel('Purchasetbl.xlsx')
 
 
 # # Title: Exploratory Data Analysis of PO69 Phase 3 Expenses
