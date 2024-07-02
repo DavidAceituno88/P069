@@ -17,7 +17,7 @@ import re #regex
 
 
 #Create phase 4 DF 
-phase4_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 4\\excel\\Phase4.xlsx')
+phase4_df = pd.read_excel('Phase4.xlsx')
 
 
 # In[18]:
