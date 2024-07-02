@@ -25,11 +25,11 @@ import plotly.express as px
 # In[17]:
 
 
-foundation_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\foundationtbl.xlsx')
-groundwork_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\groundwrk_tbl.xlsx')
-framing_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\framing_tbl.xlsx')
-cs_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\cladding_siding_windows_doors_tbl.xlsx')
-roofing_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\roofing_tbl.xlsx')
+foundation_df = pd.read_excel('foundationtbl.xlsx')
+groundwork_df = pd.read_excel('groundwrk_tbl.xlsx')
+framing_df = pd.read_excel('framing_tbl.xlsx')
+cs_df = pd.read_excel('cladding_siding_windows_doors_tbl.xlsx')
+roofing_df = pd.read_excel('roofing_tbl.xlsx')
 
 
 # In[18]:
