@@ -15,7 +15,7 @@ import plotly.express as px
 # In[2]:
 
 
-df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\excel\\Expenses.xlsx')
+df = pd.read_excel('Expenses.xlsx')
 
 df = df.rename(columns={'Unnamed: 0': 'Type'})
 purchase_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 3\\excel\\purchasetbl.xlsx')
