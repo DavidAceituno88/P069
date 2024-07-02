@@ -16,9 +16,9 @@ import plotly.express as px
 # In[21]:
 
 
-expense_df = pd.read_excel('Phase4 Expenses.xlsx')
+expense_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 4\\excel\\Phase4 Expenses.xlsx')
 
-purchase_df = pd.read_excel('Phase4 Purchases.xlsx')
+purchase_df = pd.read_excel('C:\\Users\\David\\Downloads\\Phase 4\\excel\\Phase4 Purchases.xlsx')
 
 
 # # Title: Exploratory Data Analysis of PO69 Phase 4 Expenses
