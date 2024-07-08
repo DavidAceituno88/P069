@@ -44,29 +44,6 @@ The Liverpool Queens Day Care project involves a detailed analysis of constructi
 ## Streamlit Dashboard
 A Streamlit app was developed to host an interactive dashboard for stakeholders, engineers, and the YMCA. This dashboard provides easy access to the analyses and visualizations from both phases.
 
-## Installation
-To run the analyses and the Streamlit app locally, follow these steps:
-1. Clone this repository:
-   \`\`\`bash
-   git clone https://github.com/yourusername/Construction-P069-Phase3-Phase4-EDA.git
-   \`\`\`
-2. Install the required dependencies:
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
-
-## Usage
-1. Run the Jupyter Notebooks to perform the EDA:
-   \`\`\`bash
-   jupyter notebook
-   \`\`\`
-2. Launch the Streamlit app:
-   \`\`\`bash
-   streamlit run app.py
-   \`\`\`
-
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
-
+You can access the Dashboard here: https://wellengineered.streamlit.app/
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
